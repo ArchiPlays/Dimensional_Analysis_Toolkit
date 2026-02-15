@@ -4,7 +4,7 @@ A modern web-based tool for analyzing physical quantities and their dimensions. 
 
 > **Note:** This project is a work in progress, built with AI assistance (GitHub Copilot). Contributions and feedback are welcome!
 
-**[Live Demo](https://yourusername.github.io/Dimensional_Analysis_Toolkit/)** (Replace with your GitHub Pages URL)
+**[Live Demo](https://archiplays.github.io/Dimensional_Analysis_Toolkit/)**
 
 ## Features
 
@@ -51,34 +51,6 @@ sqrt(energy / mass)     → Velocity (L T⁻¹)
 - `length + mass` → Error: Cannot add different dimensions
 - `log(velocity)` → Error: log requires dimensionless argument
 - `force + energy` → Error: Different dimensions
-
-## GitHub Pages Deployment
-
-### Quick Start
-
-1. Fork or clone this repository
-
-2. Push to your GitHub account:
-   ```bash
-   git clone https://github.com/yourusername/Dimensional_Analysis_Toolkit.git
-   cd Dimensional_Analysis_Toolkit
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-3. Enable GitHub Pages:
-   - Go to repository **Settings** > **Pages**
-   - Under "Source", select **main** branch
-   - Select **/ (root)** folder
-   - Click **Save**
-
-4. Access your site at: `https://yourusername.github.io/Dimensional_Analysis_Toolkit/`
-
-### Custom Domain (Optional)
-
-1. Create a `CNAME` file in the root directory with your domain
-2. Configure DNS with your domain provider (add CNAME record pointing to `yourusername.github.io`)
 
 ## Project Structure
 
