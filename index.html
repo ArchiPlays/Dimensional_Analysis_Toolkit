@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensional Analysis Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dimensional Analysis Toolkit</h1>
+            <p class="subtitle">Analyze physical quantities and their dimensions</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="expression">Enter Expression:</label>
+                    <input 
+                        type="text" 
+                        id="expression" 
+                        placeholder="e.g., velocity * time, force / area, sin(angle)"
+                        autocomplete="off"
+                    >
+                    <button id="analyzeBtn">Analyze</button>
+                </div>
+                <div class="examples">
+                    <span>Examples:</span>
+                    <button class="example-btn" data-expr="force * distance">force * distance</button>
+                    <button class="example-btn" data-expr="mass * velocity^2">mass * velocity^2</button>
+                    <button class="example-btn" data-expr="pressure * volume">pressure * volume</button>
+                    <button class="example-btn" data-expr="sqrt(energy / mass)">sqrt(energy / mass)</button>
+                </div>
+            </section>
+
+            <section class="result-section" id="resultSection" style="display: none;">
+                <h2>Result</h2>
+                <div id="resultContent"></div>
+            </section>
+
+            <section class="database-section">
+                <h2>Available Physical Quantities</h2>
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchQuantities" 
+                        placeholder="Search quantities..."
+                    >
+                </div>
+                <div id="quantitiesList" class="quantities-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ for physics and engineering</p>
+        </footer>
+    </div>
+
+    <script src="dimension.js"></script>
+    <script src="database.js"></script>
+    <script src="parser.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
